@@ -1,12 +1,12 @@
 import React from 'react'
 import logo from '../Assets/logo.svg'
-import MenuIcon from '../Assets/menu.svg'
+import MenuIcon from '../assets/menu.svg'
 
 function Navbar() {
   return (
     <>
 
-       <div className='p-5 mx-10'>
+       <div className='px-5'>
         <div className='container'>
             <div className='flex items-center justify-between'>
                 <div className='flex'>
