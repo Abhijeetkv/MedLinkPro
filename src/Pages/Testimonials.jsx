@@ -34,6 +34,7 @@ const testimonials = [
 
 export const Testimonials = () => {
   return (
+    <>
     <section className='py-20  bg-[#EBEBEB] '>
       <div className='container'>
         <h2 className='text-5xl md:text-6xl text-center tracking-tighter font-medium'>
@@ -130,6 +131,15 @@ export const Testimonials = () => {
         
       </div>
     </section>
+
+    <div className="bg-[#0067FF]  rounded-2xl my-3 m-4 flex items-center justify-center gap-14 p-3">
+    <p className='text-5xl text-white'>Join Revolution</p>
+    <p className='text-5xl'>+</p>
+    <p className='text-5xl text-white'>Join Revolution</p>
+    <p className='text-5xl'>+</p>
+    <p className='text-5xl text-white'>Join Revolution</p>
+  </div>
+  </>
   );
 };
 
