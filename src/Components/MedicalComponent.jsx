@@ -8,7 +8,7 @@ import liver from "../assets/liver.png";
 const MedicalComponent = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 overflow-hidden">
-      <h1 className="text-7xl font-bold mb-8">P.</h1>
+      <h1 className="text-7xl font-bold mb-8">Process.</h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full px-12">
 
