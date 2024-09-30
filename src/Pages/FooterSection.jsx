@@ -4,6 +4,8 @@ import logo1 from '../assets/logo1.svg'
 import x from '../assets/x.svg'
 import insta from '../assets/insta.svg'
 import linkdin from '../assets/linkdin.svg'
+import  Calendar from '../assets/Calendar.svg'
+
 import fb from '../assets/fb.svg'
 
 function FooterSection() {
@@ -13,7 +15,10 @@ function FooterSection() {
       
       <div className="flex justify-between items-center bg-white p-6 rounded-2xl shadow-md">
         <h2 className="text-3xl font-semibold text-gray-800">EXCITED? US TOO. LET'S GET MOVING.</h2>
-        <button className="bg-[#0065FB] text-white p-4 rounded-3xl">SCHEDULE A CALL</button>
+        <div className='flex rounded-3xl bg-[#0065FB]'>
+        <button className=" text-white p-4 rounded-3xl">SCHEDULE A CALL</button>
+        <img src={Calendar} alt="" className='pr-4' />
+        </div>
       </div>
 
       {/* Main Branding Section */}

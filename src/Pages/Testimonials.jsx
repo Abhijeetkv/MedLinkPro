@@ -2,33 +2,39 @@ import React from "react";
 import avatar1 from "../assets/avatar1.png";
 import avatar2 from "../assets/avatar2.png";
 import avatar3 from "../assets/avatar-3.png";
-import avatar4 from "../assets/avatar-4.png";
+import avatar5 from "../assets/avatar-5.png";
 import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    text: "“This product has completely transformed how I manage my projects and deadlines”",
-    name: "Garv sahu",
-    title: "Director @ Quantum",
+    text: "“The electronic health records feature is a game-changer! I can access patient information on the go, ensuring that I always have the latest data at my fingertips.”",
+    name: "Dr. Patel ",
+    title: "Specialist",
     avatarImg: avatar1,
   },
   {
-    text: "“These AI tools have completely revolutionized our SEO entire strategy overnight”",
-    name: "Abhijeet kumar",
-    title: "Founder @ Pulse",
+    text: "“MedLinkPro has transformed my practice! The streamlined communication between my clinic, pharmacies, and labs saves me valuable time, allowing me to focus on patient care”",
+    name: "Dr. Verma",
+    title: "General Practitioner",
     avatarImg: avatar2,
   },
   {
-    text: "“The user interface is so intuitive and easy to use, it has saved us countless hours”",
-    name: "Vivek Jadhav",
-    title: "Product @ Innovate",
+    text: "“With MedLinkPro, my prescriptions and inventory has never been easier. The platform keeps everything organized, helping me serve my customers more efficiently.”",
+    name: "Dr. Sharma",
+    title: "Pharmacy Owner",
     avatarImg: avatar3,
   },
   {
-    text: "“Our team's productivity has increased significantly since we started using this tool”",
-    name: "Anant dubey",
-    title: "Berozgaar @ Tech Solutions",
-    avatarImg: avatar4,
+    text: "“MedLinkPro has improved our operational efficiency across the board. The data analytics tools help us make informed decisions that enhance patient care and resource management”",
+    name: "Mrs. Kaur ",
+    title: " Patient",
+    avatarImg: avatar1,
+  },
+  {
+    text: "“The integration of lab data into MedLinkPro means I can share results with doctors and patients instantly. It has significantly improved our workflow and reduced errors”",
+    name: " Mr. Gupta ",
+    title: " Lab Technician",
+    avatarImg: avatar5,
   },
 ];
 
