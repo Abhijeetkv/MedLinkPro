@@ -1,5 +1,4 @@
 import React,{useRef} from 'react'
-import kidney from '../assets/kidney.png'
 import {motion, useScroll, useTransform, useMotionValueEvent} from 'framer-motion'
 import Navbar from '../Components/Navbar';
 
