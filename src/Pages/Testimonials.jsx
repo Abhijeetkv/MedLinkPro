@@ -41,13 +41,13 @@ const testimonials = [
 export const Testimonials = () => {
   return (
     <>
-    <section className='py-20  bg-[#EBEBEB] '>
+    <section className='py-20  bg-[#EBEBEB] overflow-clip'>
       <div className='container'>
         <h2 className='text-5xl md:text-6xl text-center tracking-tighter font-medium'>
           Testimonials
         </h2>
         
-        <div className='flex overflow-hidden mt-10'>
+        <div className='flex mt-10'>
           <motion.div
             initial={{
               translateX: "-50%",
@@ -78,7 +78,7 @@ export const Testimonials = () => {
                   </div>
                   <div>
                     <div>{testimonial.name}</div>
-                    <div className='text-white/50 text-sm'>
+                    <div className='text-black text-sm'>
                       {testimonial.title}
                     </div>
                   </div>
@@ -90,7 +90,7 @@ export const Testimonials = () => {
           </motion.div>
         </div>
 
-        <div className='flex overflow-hidden mt-5'>
+        <div className='flex  mt-5'>
           <motion.div
             initial={{
               translateX: "-50%",
@@ -121,7 +121,7 @@ export const Testimonials = () => {
                   </div>
                   <div>
                     <div>{testimonial.name}</div>
-                    <div className='text-white/50 text-sm'>
+                    <div className='text-black text-sm'>
                       {testimonial.title}
                     </div>
                   </div>
@@ -138,7 +138,7 @@ export const Testimonials = () => {
       </div>
     </section>
 
-    <div className="bg-[#0067FF]  rounded-2xl my-3 m-4 flex items-center justify-center gap-14 p-3">
+    <div className="bg-[#0067FF]  rounded-2xl my-3 m-4 flex items-center justify-center gap-14 p-3 overflow-clip">
     <p className='text-5xl text-white'>Join Revolution</p>
     <p className='text-5xl'>+</p>
     <p className='text-5xl text-white'>Join Revolution</p>

@@ -59,7 +59,7 @@ function HeroSection() {
         </div>
     </section>
 
-    <div className="bg-[#0067FF] px-[68px] rounded-2xl mt-3 flex gap-14 p-3">
+    <div className="bg-[#0067FF] px-[68px] rounded-2xl mt-3 flex gap-14 p-3 overflow-clip">
       <p className='text-5xl text-white'>Connecting Care</p>
       <p className='text-5xl'>+</p>
       <p className='text-5xl text-white'>Connecting Care</p>
