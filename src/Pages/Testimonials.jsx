@@ -4,6 +4,7 @@ import avatar2 from "../assets/avatar2.png";
 import avatar3 from "../assets/avatar-3.png";
 import avatar5 from "../assets/avatar-5.png";
 import { motion } from "framer-motion";
+import TestimonialsComponent from "../Components/TestimonialsComponent.jsx";
 
 const testimonials = [
   {
@@ -38,6 +39,7 @@ const testimonials = [
   },
 ];
 
+
 export const Testimonials = () => {
   return (
     <>
@@ -45,9 +47,9 @@ export const Testimonials = () => {
       <div className='container'>
         <h2 className='text-5xl md:text-6xl text-center tracking-tighter font-medium'>
           Testimonials
-        </h2>
-        
-        <div className='flex mt-10'>
+        </h2>        
+
+        <div className='flex [mask-image:linear-gradient(to_left,transparent,black_45%,black_75%,transparent)]  mt-5'>
           <motion.div
             initial={{
               translateX: "-50%",
@@ -65,7 +67,7 @@ export const Testimonials = () => {
               <div
                 key={testimonial.name}
                 className='border bg-white border-white/15 p-6 md:p-10 rounded-xl max-w-xs md:max-w-md flex-none'>
-                <div className='text-lg md:text-2xl tracking-tighter'>
+                <div className='text-lg md:text-xl text-justify'>
                   {testimonial.text}
                 </div>
                 <div className='flex items-center gap-3 mt-5'>
@@ -89,65 +91,41 @@ export const Testimonials = () => {
             ))}
           </motion.div>
         </div>
-
-        <div className='flex  mt-5'>
-          <motion.div
-            initial={{
-              translateX: "-50%",
-            }}
-            animate={{
-              translateX: "0",
-            }}
-            transition={{
-              repeat: Infinity,
-              duration: 30,
-              ease: "linear",
-            }}
-            className='flex gap-5 p-5 flex-none'>
-            {[...testimonials, ...testimonials].map((testimonial) => (
-              <div
-                key={testimonial.name}
-                className='border bg-white border-white/15 p-6 md:p-10 rounded-xl max-w-xs md:max-w-md flex-none'>
-                <div className='text-lg md:text-2xl tracking-tighter'>
-                  {testimonial.text}
-                </div>
-                <div className='flex items-center gap-3 mt-5'>
-                  <div className=" bg-white ">
-                    <img
-                      src={testimonial.avatarImg}
-                      alt={`Avatar for ${testimonial.name}`}
-                      className='h-11 w-11 rounded-lg'
-                    />
-                  </div>
-                  <div>
-                    <div>{testimonial.name}</div>
-                    <div className='text-black text-sm'>
-                      {testimonial.title}
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              
-            ))}
-          </motion.div>
-        </div>
-        
-
         
       </div>
+
+      <TestimonialsComponent />
     </section>
 
-    <div className="bg-[#0067FF]  rounded-2xl my-3 m-4 flex items-center justify-center gap-14 p-3 overflow-clip">
-    <p className='text-5xl text-white'>Join Revolution</p>
+    <div className="bg-[#0067FF] rounded-2xl mt-4  overflow-hidden" >
+    <motion.div
+    animate={{
+      translateX: '50%'
+    }}
+    transition={{
+      duration: 20,
+      repeat: Infinity,
+      ease: 'linear',
+      repeatType: 'loop'
+    }}
+    className='flex justify-center items-center gap-14 flex-none p-4'
+    >
+     <p className='text-5xl text-white'>Join Revolution</p>
     <p className='text-5xl'>+</p>
     <p className='text-5xl text-white'>Join Revolution</p>
     <p className='text-5xl'>+</p>
     <p className='text-5xl text-white'>Join Revolution</p>
-  </div>
+    </motion.div>
+    </div>
+
+
+  
   </>
   );
 };
+
+
+
 
 
 export default Testimonials;

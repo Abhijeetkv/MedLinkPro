@@ -19,7 +19,7 @@ function AboutSection() {
             <span className="block text-[#0065FB] pb-8">MedLinkPro</span>
             Unifying Healthcare Sectors Through Innovation
           </h2>
-          <p className="mt-6 text-lg text-gray-500">
+          <p className="mt-6 text-xl text-justify text-gray-500">
             At MedLinkPro, our mission is to unify healthcare sectors through innovative
             technology solutions. We enhance collaboration among doctors, hospitals,
             pharmacies, and laboratories, improving communication and operational
@@ -29,53 +29,50 @@ function AboutSection() {
           </p>
           
         </div>
+        <div>
         <div className="grid grid-cols-3 gap-2">
         <div className="relative rounded-3xl overflow-hidden ">
           <img
-            src={docimg1} // Replace with your actual image URL
+            src={docimg1} 
             alt="Healthcare Professional"
             className="w-full h-full object-cover"
           />
 
         </div>
 
-        {/* Image 2 */}
         <div className="relative rounded-3xl overflow-hidden">
           <img
-            src={child} // Replace with your actual image URL
+            src={child} 
             alt="Smiling Patient"
             className="w-full h-full object-cover"
           />
          
         </div>
 
-        {/* Image 3 */}
         <div className="relative rounded-3xl overflow-hidden">
           <img
-            src={docimg2} // Replace with your actual image URL
+            src={docimg2} 
             alt="Confident Doctor"
             className="w-full h-full object-cover"
           />
           
         </div>
 
-        {/* App Logo */}
         <div className="flex items-center justify-center bg-blue-100 rounded-3xl overflow-hidden">
           <img src={logo1} alt="" />
         </div>
 
-        {/* Image 4 */}
         <div className="relative  rounded-3xl overflow-hidden">
           <img
-            src={docimg3} // Replace with your actual image URL
+            src={docimg3} 
             alt="Patient Consultation"
             className="w-full h-full object-cover"
           />
           
         </div>
-      </div>
 
-      <div className="grid grid-cols-3 gap-8 text-center sm:grid-cols-3">
+        </div>
+        <div className="grid grid-cols-3 gap-8 text-center sm:grid-cols-3 mt-10">
             <div>
               <span className="block text-4xl font-extrabold text-[#0065FB]">
                 5
@@ -101,8 +98,10 @@ function AboutSection() {
               </span>
             </div>
           </div>
+      </div>
 
-       </div>
+     
+      </div>
        
     </div>
 

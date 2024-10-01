@@ -15,7 +15,7 @@ function Features() {
         <h2 className="text-center font-display lg:text-7xl text-3xl font-bold  text-slate-900 md:text-4xl pt-8">
           Features
         </h2>
-        <ul className="mt-12 grid grid-cols-2 gap-6 text-center text-slate-700 md:grid-cols-3">
+        <ul className="mt-12 grid grid-cols-1 gap-6 text-center text-slate-700 md:grid-cols-3">
           <li className="rounded-xl bg-white px-6 py-8 shadow-sm">
             <img src={si} alt="" className="mx-auto h-16 w-16" />
             <h3 className="my-3 font-display font-medium">Streamlined Integration</h3>
