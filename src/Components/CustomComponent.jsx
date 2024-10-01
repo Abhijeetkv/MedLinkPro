@@ -5,7 +5,7 @@ import customimg2 from '../assets/customimg2.png'
 function CustomComponent() {
   return (
     <>
-<div className="flex items-center justify-center bg-[#EBEBEB] h-[600px]">
+<div className="flex items-center justify-center bg-[#EBEBEB] h-[600px] overflow-clip">
 <div className="flex flex-col justify-center space-y-2  pl-[120px]">
         <p className="text-7xl font-bold text-gray-800">
           Connecting the care that
