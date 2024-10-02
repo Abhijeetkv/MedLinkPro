@@ -8,11 +8,11 @@ import logo1 from '../assets/logo1.svg'
 function AboutSection() {
   return (
     <>
-    <div className="flex items-center justify-center m-10 overflow-hidden">
+    <div className="flex items-center justify-center  m-10 overflow-hidden">
         <h1 className="text-7xl font-bold">About Us.</h1>
     </div> 
 
-     <div className="bg-[#EBEBEB] rounded-3xl mt-4 py-16 px-4 sm:px-6 lg:px-8">
+     <div className="bg-[#EBEBEB] mx-4 rounded-3xl my-4 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="text-left">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">

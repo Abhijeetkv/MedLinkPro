@@ -18,7 +18,7 @@ function HeroSection() {
 
   return (
     <>
-    <div className="bg-white p-4">
+    <div className="bg-white p-4 overflow-hidden">
     <section ref={heroRef} className='pt-8 pb-20 rounded-3xl md:pt-5 md:pb-10 bg-[#EBEBEB] overflow-x-clip min-h-screen'>
       <Navbar />
         <div className="container relative">

@@ -4,7 +4,6 @@ import avatar2 from "../assets/avatar2.png";
 import avatar3 from "../assets/avatar-3.png";
 import avatar5 from "../assets/avatar-5.png";
 import { motion } from "framer-motion";
-import TestimonialsComponent from "../Components/TestimonialsComponent.jsx";
 
 const testimonials = [
   {
@@ -43,19 +42,14 @@ const testimonials = [
 export const Testimonials = () => {
   return (
     <>
-    <section className='py-20 my-2  bg-[#EBEBEB] overflow-clip'>
-      <div className='container'>
-        <h2 className='text-5xl md:text-6xl text-center tracking-tighter font-medium'>
-          Testimonials
-        </h2>        
 
-        <div className='flex [mask-image:linear-gradient(to_left,transparent,black_45%,black_75%,transparent)]  mt-5'>
+        <div className='flex mt-2 [mask-image:linear-gradient(to_left,transparent,black_25%,black_75%,transparent)]'>
           <motion.div
             initial={{
-              translateX: "-50%",
+              translateX: "0",
             }}
             animate={{
-              translateX: "0",
+              translateX: "-50%",
             }}
             transition={{
               repeat: Infinity,
@@ -92,40 +86,11 @@ export const Testimonials = () => {
           </motion.div>
         </div>
         
-      </div>
+        
 
-      <TestimonialsComponent />
-    </section>
-
-    <div className="bg-[#0067FF] rounded-2xl mt-4  overflow-hidden" >
-    <motion.div
-    animate={{
-      translateX: '50%'
-    }}
-    transition={{
-      duration: 20,
-      repeat: Infinity,
-      ease: 'linear',
-      repeatType: 'loop'
-    }}
-    className='flex justify-center items-center gap-14 flex-none p-4'
-    >
-     <p className='text-5xl text-white'>Join Revolution</p>
-    <p className='text-5xl'>+</p>
-    <p className='text-5xl text-white'>Join Revolution</p>
-    <p className='text-5xl'>+</p>
-    <p className='text-5xl text-white'>Join Revolution</p>
-    </motion.div>
-    </div>
-
-
-  
   </>
   );
 };
-
-
-
 
 
 export default Testimonials;

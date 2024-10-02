@@ -11,9 +11,9 @@ import fb from '../assets/fb.svg'
 function FooterSection() {
   return (
     <>
-    <div className="bg-[#EBEBEB] p-14 rounded-3xl">
+    <div className="bg-[#EBEBEB] p-14 mx-4 mt-4 rounded-3xl overflow-clip">
       
-      <div className="flex justify-between items-center bg-white p-6 rounded-2xl shadow-md">
+      <div className="flex justify-between items-center bg-white p-6 mx-24 rounded-2xl shadow-md">
         <h2 className="text-3xl font-semibold text-gray-800">EXCITED? US TOO. LET'S GET MOVING.</h2>
         <div className='flex rounded-3xl bg-[#0065FB]'>
         <button className=" text-white p-4 rounded-3xl">SCHEDULE A CALL</button>
@@ -22,7 +22,7 @@ function FooterSection() {
       </div>
 
       {/* Main Branding Section */}
-      <div className="mt-6 grid grid-cols-3 gap-8 bg-[#EBEBEB] px-14 pt-14 m-10">
+      <div className="mt-6 grid grid-cols-3 gap-8 bg-[#EBEBEB] px-14 pt-10 m-10">
       <div className="col-span-1 bg-[#0065FB] rounded-3xl shadow-lg overflow-hidden ">
           <p className='text-5xl pt-8 px-16 text-white'>MedLinkPro</p>
           <div className='flex items-center justify-center pt-6'>
