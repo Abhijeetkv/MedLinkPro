@@ -71,7 +71,7 @@ function FooterSection() {
             </a>
                 </div>
                 <div className="p-4 flex items-center justify-center border rounded-3xl bg-white w-[280px] h-[171px]">
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                     <img
                 src={insta}
                 alt="Twitter"
@@ -80,7 +80,7 @@ function FooterSection() {
             </a>
                 </div>
                 <div className="p-4 flex items-center justify-center border rounded-3xl bg-white w-[280px] h-[171px]">
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://linkdin.com" target="_blank" rel="noopener noreferrer">
                     <img
                 src={linkdin}
                 alt="Twitter"
@@ -89,7 +89,7 @@ function FooterSection() {
             </a>
                 </div>
                 <div className="p-4 flex items-center justify-center border rounded-3xl bg-white w-[280px] h-[171px]">
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                     <img
                 src={fb}
                 alt="Twitter"
