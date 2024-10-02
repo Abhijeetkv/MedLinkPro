@@ -43,7 +43,7 @@ export const Testimonials = () => {
   return (
     <>
 
-        <div className='flex mt-2 [mask-image:linear-gradient(to_left,transparent,black_25%,black_75%,transparent)]'>
+        <div className='flex mt-2 [mask-image:linear-gradient(to_left,transparent,black_45%,black_75%,transparent)]'>
           <motion.div
             initial={{
               translateX: "0",
