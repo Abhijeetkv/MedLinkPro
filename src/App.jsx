@@ -4,7 +4,6 @@ import Features from "./Pages/Features"
 import Testimonials  from "./Pages/Testimonials"
 import MedicalComponent from "./Components/MedicalComponent"
 import FooterSection from "./Pages/FooterSection"
-import AboutComponent from "./Components/AboutComponent"
 import AboutSection from "./Pages/AboutSection"
 
 function App() {
