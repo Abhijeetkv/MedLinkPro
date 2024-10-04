@@ -39,93 +39,101 @@ const testimonials = [
   },
 ];
 
-
 export const Testimonials = () => {
   return (
     <>
-    <section className='py-20 my-2  bg-[#EBEBEB] overflow-clip'>
-      <div className='container'>
-        <h2 className='text-5xl md:text-6xl text-center tracking-tighter font-medium'>
-          Testimonials
-        </h2>        
+      <section className="py-20 my-2  bg-[#EBEBEB] overflow-clip">
+        <div className="container">
+          <h2 className="text-5xl md:text-6xl text-center tracking-tighter font-medium">
+            Testimonials
+          </h2>
 
-        <div className='flex [mask-image:linear-gradient(to_left,transparent,black_45%,black_75%,transparent)]  mt-5'>
-          <motion.div
-            initial={{
-              translateX: "-50%",
-            }}
-            animate={{
-              translateX: "0",
-            }}
-            transition={{
-              repeat: Infinity,
-              duration: 30,
-              ease: "linear",
-            }}
-            className='flex gap-5 p-5 flex-none'>
-            {[...testimonials, ...testimonials].map((testimonial) => (
-              <div
-                key={testimonial.name}
-                className='border bg-white border-white/15 p-6 md:p-10 rounded-xl max-w-xs md:max-w-md flex-none'>
-                <div className='text-lg md:text-xl text-justify'>
-                  {testimonial.text}
-                </div>
-                <div className='flex items-center gap-3 mt-5'>
-                  <div className=" bg-white ">
-                    <img
-                      src={testimonial.avatarImg}
-                      alt={`Avatar for ${testimonial.name}`}
-                      className='h-11 w-11 rounded-lg'
-                    />
+          <div className="flex [mask-image:linear-gradient(to_left,transparent,black_45%,black_75%,transparent)]  mt-5">
+            <motion.div
+              initial={{
+                translateX: "-50%",
+              }}
+              animate={{
+                translateX: "0",
+              }}
+              transition={{
+                repeat: Infinity,
+                duration: 30,
+                ease: "linear",
+              }}
+              className="flex gap-5 p-5 flex-none"
+            >
+              {[...testimonials, ...testimonials].map((testimonial) => (
+                <div
+                  key={testimonial.name}
+                  className="border bg-white border-white/15 p-6 md:p-10 rounded-xl max-w-xs md:max-w-md flex-none"
+                >
+                  <div className="text-lg md:text-xl text-justify">
+                    {testimonial.text}
                   </div>
-                  <div>
-                    <div>{testimonial.name}</div>
-                    <div className='text-black text-sm'>
-                      {testimonial.title}
+                  <div className="flex items-center gap-3 mt-5">
+                    <div className=" bg-white ">
+                      <img
+                        src={testimonial.avatarImg}
+                        alt={`Avatar for ${testimonial.name}`}
+                        className="h-11 w-11 rounded-lg"
+                      />
+                    </div>
+                    <div>
+                      <div>{testimonial.name}</div>
+                      <div className="text-black text-sm">
+                        {testimonial.title}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-
-              
-            ))}
-          </motion.div>
+              ))}
+            </motion.div>
+          </div>
         </div>
-        
+
+        <TestimonialsComponent />
+      </section>
+
+      <div className="bg-[#0067FF] rounded-2xl mt-4 overflow-hidden flex">
+        <motion.div
+          animate={{
+            translateX: "-100%",
+          }}
+          transition={{
+            duration: 20,
+            repeat: Infinity,
+            ease: "linear",
+          }}
+          className="flex justify-center items-center gap-14 flex-none p-4"
+        >
+          <p className="text-5xl text-white">Join Revolution</p>
+          <p className="text-5xl">+</p>
+          <p className="text-5xl text-white">Join Revolution</p>
+          <p className="text-5xl">+</p>
+          <p className="text-5xl text-white">Join Revolution</p>
+
+          <p className="text-5xl text-white">Join Revolution</p>
+          <p className="text-5xl">+</p>
+          <p className="text-5xl text-white">Join Revolution</p>
+          <p className="text-5xl">+</p>
+          <p className="text-5xl text-white">Join Revolution</p>
+
+          <p className="text-5xl text-white">Join Revolution</p>
+          <p className="text-5xl">+</p>
+          <p className="text-5xl text-white">Join Revolution</p>
+          <p className="text-5xl">+</p>
+          <p className="text-5xl text-white">Join Revolution</p>
+
+          <p className="text-5xl text-white">Join Revolution</p>
+          <p className="text-5xl">+</p>
+          <p className="text-5xl text-white">Join Revolution</p>
+          <p className="text-5xl">+</p>
+          <p className="text-5xl text-white">Join Revolution</p>
+        </motion.div>
       </div>
-
-      <TestimonialsComponent />
-    </section>
-
-    <div className="bg-[#0067FF] rounded-2xl mt-4  overflow-hidden" >
-    <motion.div
-    animate={{
-      translateX: '50%'
-    }}
-    transition={{
-      duration: 20,
-      repeat: Infinity,
-      ease: 'linear',
-      repeatType: 'loop'
-    }}
-    className='flex justify-center items-center gap-14 flex-none p-4'
-    >
-     <p className='text-5xl text-white'>Join Revolution</p>
-    <p className='text-5xl'>+</p>
-    <p className='text-5xl text-white'>Join Revolution</p>
-    <p className='text-5xl'>+</p>
-    <p className='text-5xl text-white'>Join Revolution</p>
-    </motion.div>
-    </div>
-
-
-  
-  </>
+    </>
   );
 };
-
-
-
-
 
 export default Testimonials;
