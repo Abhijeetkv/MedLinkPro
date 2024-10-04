@@ -83,18 +83,12 @@ function HeroSection() {
               translateX: "-100%",
             }}
             transition={{
-              duration: 10,
+              duration: 20,
               repeat: Infinity,
               ease: "linear",
             }}
-            className="flex justify-center items-center gap-14 p-4"
+            className="flex justify-center items-center gap-14 p-4 whitespace-nowrap"
           >
-            <p className="text-5xl text-white">Connecting Care</p>
-            <p className="text-5xl">+</p>
-            <p className="text-5xl text-white">Connecting Care</p>
-            <p className="text-5xl">+</p>
-            <p className="text-5xl text-white">Connecting Care</p>
-
             <p className="text-5xl text-white">Connecting Care</p>
             <p className="text-5xl">+</p>
             <p className="text-5xl text-white">Connecting Care</p>
